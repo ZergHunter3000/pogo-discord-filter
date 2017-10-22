@@ -1,0 +1,1277 @@
+{
+  "Bulbasaur": {
+    "dex": "1",
+    "type": "Grass,Poison",
+    "channel": "null"
+  },
+  "Ivysaur": {
+    "dex": "2",
+    "type": "Grass,Poison",
+    "channel": "null"
+  },
+  "Venusaur": {
+    "dex": "3",
+    "type": "Grass,Poison",
+    "channel": "null"
+  },
+  "Charmander": {
+    "dex": "4",
+    "type": "Fire",
+    "channel": "null"
+  },
+  "Charmeleon": {
+    "dex": "5",
+    "type": "Fire",
+    "channel": "null"
+  },
+  "Charizard": {
+    "dex": "6",
+    "type": "Fire,Flying",
+    "channel": "null"
+  },
+  "Squirtle": {
+    "dex": "7",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Wartortle": {
+    "dex": "8",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Blastoise": {
+    "dex": "9",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Caterpie": {
+    "dex": "10",
+    "type": "Bug",
+    "channel": "null"
+  },
+  "Metapod": {
+    "dex": "Metapod",
+    "type": "Bug",
+    "channel": "null"
+  },
+  "Butterfree": {
+    "dex": "Butterfree",
+    "type": "Bug,Flying",
+    "channel": "null"
+  },
+  "Weedle": {
+    "dex": "Weedle",
+    "type": "Bug,Poison",
+    "channel": "null"
+  },
+  "Kakuna": {
+    "dex": "Kakuna",
+    "type": "Bug,Poison",
+    "channel": "null"
+  },
+  "Beedrill": {
+    "dex": "Beedrill",
+    "type": "Bug,Poison",
+    "channel": "null"
+  },
+  "Pidgey": {
+    "dex": "16",
+    "type": "Normal,Flying",
+    "channel": "null"
+  },
+  "Pidgeotto": {
+    "dex": "17",
+    "type": "Normal,Flying",
+    "channel": "null"
+  },
+  "Pidgeot": {
+    "dex": "18",
+    "type": "Normal,Flying",
+    "channel": "null"
+  },
+  "Rattata": {
+    "dex": "19",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Raticate": {
+    "dex": "20",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Spearow": {
+    "dex": "21",
+    "type": "Normal,Flying",
+    "channel": "null"
+  },
+  "Fearow": {
+    "dex": "22",
+    "type": "Normal,Flying",
+    "channel": "null"
+  },
+  "Ekans": {
+    "dex": "23",
+    "type": "Poison",
+    "channel": "null"
+  },
+  "Arbok": {
+    "dex": "24",
+    "type": "Poison",
+    "channel": "null"
+  },
+  "Pikachu": {
+    "dex": "25",
+    "type": "Electric",
+    "channel": "null"
+  },
+  "Raichu": {
+    "dex": "26",
+    "type": "Electric",
+    "channel": "null"
+  },
+  "Sandshrew": {
+    "dex": "27",
+    "type": "Ground",
+    "channel": "null"
+  },
+  "Sandslash": {
+    "dex": "28",
+    "type": "Ground",
+    "channel": "null"
+  },
+  "Nidoran♀": {
+    "dex": "29",
+    "type": "Poison",
+    "channel": "null"
+  },
+  "Nidorina": {
+    "dex": "30",
+    "type": "Poison",
+    "channel": "null"
+  },
+  "Nidoqueen": {
+    "dex": "31",
+    "type": "Poison,Ground",
+    "channel": "null"
+  },
+  "Nidoran♂": {
+    "dex": "32",
+    "type": "Poison",
+    "channel": "null"
+  },
+  "Nidorino": {
+    "dex": "33",
+    "type": "Poison",
+    "channel": "null"
+  },
+  "Nidoking": {
+    "dex": "34",
+    "type": "Poison",
+    "channel": "null"
+  },
+  "Clefairy": {
+    "dex": "35",
+    "type": "Fairy",
+    "channel": "null"
+  },
+  "Clefable": {
+    "dex": "36",
+    "type": "Fairy",
+    "channel": "null"
+  },
+  "Vulpix": {
+    "dex": "37",
+    "type": "Fire",
+    "channel": "null"
+  },
+  "Ninetales": {
+    "dex": "38",
+    "type": "Fire",
+    "channel": "null"
+  },
+  "Jigglypuff": {
+    "dex": "39",
+    "type": "Normal,Fairy",
+    "channel": "null"
+  },
+  "Wigglytuff": {
+    "dex": "40",
+    "type": "Normal,Fairy",
+    "channel": "null"
+  },
+  "Zubat": {
+    "dex": "41",
+    "type": "Poison,Flying",
+    "channel": "null"
+  },
+  "Golbat": {
+    "dex": "42",
+    "type": "Poison,Flying",
+    "channel": "null"
+  },
+  "Oddish": {
+    "dex": "43",
+    "type": "Grass,poison",
+    "channel": "null"
+  },
+  "Gloom": {
+    "dex": "44",
+    "type": "Grass,Poison",
+    "channel": "null"
+  },
+  "Vileplume": {
+    "dex": "45",
+    "type": "Poison,Flying",
+    "channel": "null"
+  },
+  "Paras": {
+    "dex": "46",
+    "type": "Bug,Grass",
+    "channel": "null"
+  },
+  "Parasect": {
+    "dex": "47",
+    "type": "Bug,Grass",
+    "channel": "null"
+  },
+  "Venonat": {
+    "dex": "48",
+    "type": "Bug,Poison",
+    "channel": "null"
+  },
+  "Venomoth": {
+    "dex": "49",
+    "type": "Bug,Poison",
+    "channel": "null"
+  },
+  "Diglett": {
+    "dex": "50",
+    "type": "Ground",
+    "channel": "null"
+  },
+  "Dugtrio": {
+    "dex": "51",
+    "type": "Ground",
+    "channel": "null"
+  },
+  "Meowth": {
+    "dex": "52",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Persian": {
+    "dex": "53",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Psyduck": {
+    "dex": "54",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Golduck": {
+    "dex": "55",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Mankey": {
+    "dex": "56",
+    "type": "Fighting",
+    "channel": "null"
+  },
+  "Primeape": {
+    "dex": "57",
+    "type": "Fighting",
+    "channel": "null"
+  },
+  "Growlithe": {
+    "dex": "58",
+    "type": "Fire",
+    "channel": "null"
+  },
+  "Arcanine": {
+    "dex": "59",
+    "type": "Fire",
+    "channel": "null"
+  },
+  "Poliwag": {
+    "dex": "60",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Poliwhirl": {
+    "dex": "61",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Poliwrath": {
+    "dex": "62",
+    "type": "Water,Fighting",
+    "channel": "null"
+  },
+  "Abra": {
+    "dex": "63",
+    "type": "Psychic",
+    "channel": "null"
+  },
+  "Kadabra": {
+    "dex": "64",
+    "type": "Psychic",
+    "channel": "null"
+  },
+  "Alakazam": {
+    "dex": "65",
+    "type": "Psychic",
+    "channel": "null"
+  },
+  "Machop": {
+    "dex": "66",
+    "type": "Fighting",
+    "channel": "null"
+  },
+  "Machoke": {
+    "dex": "67",
+    "type": "Fighting",
+    "channel": "null"
+  },
+  "Machamp": {
+    "dex": "68",
+    "type": "Fighting",
+    "channel": "null"
+  },
+  "Bellsprout": {
+    "dex": "69",
+    "type": "Grass,Poison",
+    "channel": "null"
+  },
+  "Weepinbell": {
+    "dex": "70",
+    "type": "Grass,Poison",
+    "channel": "null"
+  },
+  "Victreebel": {
+    "dex": "71",
+    "type": "Grass,Poison",
+    "channel": "null"
+  },
+  "Tentacool": {
+    "dex": "72",
+    "type": "Water,Poison",
+    "channel": "null"
+  },
+  "Tentacruel": {
+    "dex": "73",
+    "type": "Water,Poison",
+    "channel": "null"
+  },
+  "Geodude": {
+    "dex": "74",
+    "type": "Rock,Ground",
+    "channel": "null"
+  },
+  "Graveler": {
+    "dex": "75",
+    "type": "Rock,Ground",
+    "channel": "null"
+  },
+  "Golem": {
+    "dex": "76",
+    "type": "Rock,Ground",
+    "channel": "null"
+  },
+  "Ponyta": {
+    "dex": "77",
+    "type": "Fire",
+    "channel": "null"
+  },
+  "Rapidash": {
+    "dex": "78",
+    "type": "Fire",
+    "channel": "null"
+  },
+  "Slowpoke": {
+    "dex": "79",
+    "type": "Water,Psychic",
+    "channel": "null"
+  },
+  "Slowbro": {
+    "dex": "80",
+    "type": "Water,Psychic",
+    "channel": "null"
+  },
+  "Magnemite": {
+    "dex": "81",
+    "type": "Electric,steel",
+    "channel": "null"
+  },
+  "Magneton": {
+    "dex": "82",
+    "type": "Electric,steel",
+    "channel": "null"
+  },
+  "Farfetch'd": {
+    "dex": "83",
+    "type": "Normal,Flying",
+    "channel": "null"
+  },
+  "Doduo": {
+    "dex": "84",
+    "type": "Normal,Flying",
+    "channel": "null"
+  },
+  "Dodrio": {
+    "dex": "85",
+    "type": "Normal,Flying",
+    "channel": "null"
+  },
+  "Seel": {
+    "dex": "86",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Dewgong": {
+    "dex": "87",
+    "type": "Water,Ice",
+    "channel": "null"
+  },
+  "Grimer": {
+    "dex": "88",
+    "type": "Poison",
+    "channel": "null"
+  },
+  "Muk": {
+    "dex": "89",
+    "type": "Poison",
+    "channel": "null"
+  },
+  "Shellder": {
+    "dex": "90",
+    "type": "Poison",
+    "channel": "null"
+  },
+  "Cloyster": {
+    "dex": "91",
+    "type": "Water,Ice",
+    "channel": "null"
+  },
+  "Gastly": {
+    "dex": "92",
+    "type": "Ghost,Poison",
+    "channel": "null"
+  },
+  "Haunter": {
+    "dex": "93",
+    "type": "Ghost,Poison",
+    "channel": "null"
+  },
+  "Gengar": {
+    "dex": "94",
+    "type": "Ghost,Poison",
+    "channel": "null"
+  },
+  "Onix": {
+    "dex": "95",
+    "type": "Rock,Ground",
+    "channel": "null"
+  },
+  "Drowzee": {
+    "dex": "96",
+    "type": "Psychic",
+    "channel": "null"
+  },
+  "Hypno": {
+    "dex": "97",
+    "type": "Psychic",
+    "channel": "null"
+  },
+  "Krabby": {
+    "dex": "98",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Kingler": {
+    "dex": "99",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Voltorb": {
+    "dex": "100",
+    "type": "Electric",
+    "channel": "null"
+  },
+  "Electrode": {
+    "dex": "101",
+    "type": "Electric",
+    "channel": "null"
+  },
+  "Exeggcute": {
+    "dex": "102",
+    "type": "Grass,Psychic",
+    "channel": "null"
+  },
+  "Exeggutor": {
+    "dex": "103",
+    "type": "Grass,Psychic",
+    "channel": "null"
+  },
+  "Cubone": {
+    "dex": "104",
+    "type": "Ground",
+    "channel": "null"
+  },
+  "Marowak": {
+    "dex": "105",
+    "type": "Ground",
+    "channel": "null"
+  },
+  "Hitmonlee": {
+    "dex": "106",
+    "type": "Fighting",
+    "channel": "null"
+  },
+  "Hitmonchan": {
+    "dex": "107",
+    "type": "Fighting",
+    "channel": "null"
+  },
+  "Lickitung": {
+    "dex": "108",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Koffing": {
+    "dex": "109",
+    "type": "Poison",
+    "channel": "null"
+  },
+  "Weezing": {
+    "dex": "110",
+    "type": "Poison",
+    "channel": "null"
+  },
+  "Rhyhorn": {
+    "dex": "111",
+    "type": "Ground,Rock",
+    "channel": "null"
+  },
+  "Rhydon": {
+    "dex": "112",
+    "type": "Ground,Rock",
+    "channel": "null"
+  },
+  "Chansey": {
+    "dex": "113",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Tangela": {
+    "dex": "114",
+    "type": "Grass",
+    "channel": "null"
+  },
+  "Kangaskhan": {
+    "dex": "115",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Horsea": {
+    "dex": "116",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Seadra": {
+    "dex": "117",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Goldeen": {
+    "dex": "118",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Seaking": {
+    "dex": "119",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Staryu": {
+    "dex": "120",
+    "type": "Water,Psychic",
+    "channel": "null"
+  },
+  "Starmie": {
+    "dex": "121",
+    "type": "Water,Psychic",
+    "channel": "null"
+  },
+  "Mr. Mime": {
+    "dex": "122",
+    "type": "Psychic,Fairy",
+    "channel": "null"
+  },
+  "Scyther": {
+    "dex": "123",
+    "type": "Bug,Flying",
+    "channel": "null"
+  },
+  "Jynx": {
+    "dex": "124",
+    "type": "Ice,Psychic",
+    "channel": "null"
+  },
+  "Electabuzz": {
+    "dex": "125",
+    "type": "Electric",
+    "channel": "null"
+  },
+  "Magmar": {
+    "dex": "126",
+    "type": "Fire",
+    "channel": "null"
+  },
+  "Pinsir": {
+    "dex": "127",
+    "type": "Bug",
+    "channel": "null"
+  },
+  "Tauros": {
+    "dex": "128",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Magikarp": {
+    "dex": "129",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Gyarados": {
+    "dex": "130",
+    "type": "Water,Flying",
+    "channel": "null"
+  },
+  "Lapras": {
+    "dex": "131",
+    "type": "Water,Ice",
+    "channel": "null"
+  },
+  "Ditto": {
+    "dex": "132",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Eevee": {
+    "dex": "133",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Vaporeon": {
+    "dex": "134",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Jolteon": {
+    "dex": "135",
+    "type": "Electric",
+    "channel": "null"
+  },
+  "Flareon": {
+    "dex": "136",
+    "type": "Fire",
+    "channel": "null"
+  },
+  "Porygon": {
+    "dex": "137",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Omanyte": {
+    "dex": "138",
+    "type": "Rock,Water",
+    "channel": "null"
+  },
+  "Omastar": {
+    "dex": "139",
+    "type": "Rock,Water",
+    "channel": "null"
+  },
+  "Kabuto": {
+    "dex": "140",
+    "type": "Rock,Water",
+    "channel": "null"
+  },
+  "Kabutops": {
+    "dex": "141",
+    "type": "Rock,Water",
+    "channel": "null"
+  },
+  "Aerodactyl": {
+    "dex": "142",
+    "type": "Rock,Flying",
+    "channel": "null"
+  },
+  "Snorlax": {
+    "dex": "143",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Articuno": {
+    "dex": "144",
+    "type": "Ice,Flying",
+    "channel": "null"
+  },
+  "Zapdos": {
+    "dex": "145",
+    "type": "Electric,Flying",
+    "channel": "null"
+  },
+  "Moltres": {
+    "dex": "146",
+    "type": "Fire,Flying",
+    "channel": "null"
+  },
+  "Dratini": {
+    "dex": "147",
+    "type": "Dragon",
+    "channel": "null"
+  },
+  "Dragonair": {
+    "dex": "148",
+    "type": "Dragon",
+    "channel": "null"
+  },
+  "Dragonite": {
+    "dex": "149",
+    "type": "Dragon,Flying",
+    "channel": "null"
+  },
+  "Mewtwo": {
+    "dex": "150",
+    "type": "Psychic",
+    "channel": "null"
+  },
+  "Chikorita": {
+    "dex": "152",
+    "type": "Grass",
+    "channel": "null"
+  },
+  "Bayleef": {
+    "dex": "153",
+    "type": "Grass",
+    "channel": "null"
+  },
+  "Meganium": {
+    "dex": "154",
+    "type": "Grass",
+    "channel": "null"
+  },
+  "Cyndaquil": {
+    "dex": "155",
+    "type": "Fire",
+    "channel": "null"
+  },
+  "Quilava": {
+    "dex": "156",
+    "type": "Fire",
+    "channel": "null"
+  },
+  "Typhlosion": {
+    "dex": "157",
+    "type": "Fire",
+    "channel": "null"
+  },
+  "Totodile": {
+    "dex": "158",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Croconaw": {
+    "dex": "159",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Feraligatr": {
+    "dex": "160",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Sentret": {
+    "dex": "161",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Furret": {
+    "dex": "162",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Hoothoot": {
+    "dex": "163",
+    "type": "Normal,Flying",
+    "channel": "null"
+  },
+  "Noctowl": {
+    "dex": "164",
+    "type": "Normal,Flying",
+    "channel": "null"
+  },
+  "Ledyba": {
+    "dex": "165",
+    "type": "Bug,Flying",
+    "channel": "null"
+  },
+  "Ledian": {
+    "dex": "166",
+    "type": "Bug,Flying",
+    "channel": "null"
+  },
+  "Spinarak": {
+    "dex": "167",
+    "type": "Bug,Poison",
+    "channel": "null"
+  },
+  "Ariados": {
+    "dex": "168",
+    "type": "Bug,Poison",
+    "channel": "null"
+  },
+  "Crobat": {
+    "dex": "169",
+    "type": "Poison,Flying",
+    "channel": "null"
+  },
+  "Chinchou": {
+    "dex": "170",
+    "type": "Water,Electric",
+    "channel": "null"
+  },
+  "Lanturn": {
+    "dex": "171",
+    "type": "Water,Electric",
+    "channel": "null"
+  },
+  "Pichu": {
+    "dex": "172",
+    "type": "Electric",
+    "channel": "null"
+  },
+  "Cleffa": {
+    "dex": "173",
+    "type": "Fairy",
+    "channel": "null"
+  },
+  "Igglybuff": {
+    "dex": "174",
+    "type": "Normal,Fairy",
+    "channel": "null"
+  },
+  "Togepi": {
+    "dex": "175",
+    "type": "Fairy",
+    "channel": "null"
+  },
+  "Togetic": {
+    "dex": "176",
+    "type": "Fairy,Flying",
+    "channel": "null"
+  },
+  "Natu": {
+    "dex": "177",
+    "type": "Psychic,Flying",
+    "channel": "null"
+  },
+  "Xatu": {
+    "dex": "178",
+    "type": "Psychic,Flying",
+    "channel": "null"
+  },
+  "Mareep": {
+    "dex": "179",
+    "type": "Electric",
+    "channel": "null"
+  },
+  "Flaaffy": {
+    "dex": "180",
+    "type": "Electric",
+    "channel": "null"
+  },
+  "Ampharos": {
+    "dex": "181",
+    "type": "Electric",
+    "channel": "null"
+  },
+  "Bellossom": {
+    "dex": "182",
+    "type": "Grass",
+    "channel": "null"
+  },
+  "Marill": {
+    "dex": "183",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Azumarill": {
+    "dex": "184",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Sudowoodo": {
+    "dex": "185",
+    "type": "Rock",
+    "channel": "null"
+  },
+  "Politoed": {
+    "dex": "186",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Hoppip": {
+    "dex": "187",
+    "type": "Grass,Flying",
+    "channel": "null"
+  },
+  "Skiploom": {
+    "dex": "188",
+    "type": "Grass,Flying",
+    "channel": "null"
+  },
+  "Jumpluff": {
+    "dex": "189",
+    "type": "Grass,Flying",
+    "channel": "null"
+  },
+  "Aipom": {
+    "dex": "190",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Sunkern": {
+    "dex": "191",
+    "type": "Grass",
+    "channel": "null"
+  },
+  "Sunflora": {
+    "dex": "192",
+    "type": "Grass",
+    "channel": "null"
+  },
+  "Yanma": {
+    "dex": "193",
+    "type": "Bug,Flying",
+    "channel": "null"
+  },
+  "Wooper": {
+    "dex": "194",
+    "type": "Water,Ground",
+    "channel": "null"
+  },
+  "Quagsire": {
+    "dex": "195",
+    "type": "Water,Ground",
+    "channel": "null"
+  },
+  "Espeon": {
+    "dex": "196",
+    "type": "Psychic",
+    "channel": "null"
+  },
+  "Umbreon": {
+    "dex": "197",
+    "type": "Dark",
+    "channel": "null"
+  },
+  "Murkrow": {
+    "dex": "198",
+    "type": "Dark,Flying",
+    "channel": "null"
+  },
+  "Slowking": {
+    "dex": "199",
+    "type": "Water,Psychic",
+    "channel": "null"
+  },
+  "Misdreavus": {
+    "dex": "200",
+    "type": "Ghost",
+    "channel": "null"
+  },
+  "Unown": {
+    "dex": "201",
+    "type": "Psychic",
+    "channel": "null"
+  },
+  "Wobbuffet": {
+    "dex": "202",
+    "type": "Psychic",
+    "channel": "null"
+  },
+  "Girafarig": {
+    "dex": "203",
+    "type": "Normal,Psychic",
+    "channel": "null"
+  },
+  "Pineco": {
+    "dex": "204",
+    "type": "Bug",
+    "channel": "null"
+  },
+  "Forretress": {
+    "dex": "205",
+    "type": "Bug,Steel",
+    "channel": "null"
+  },
+  "Dunsparce": {
+    "dex": "206",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Gligar": {
+    "dex": "207",
+    "type": "Ground,Flying",
+    "channel": "null"
+  },
+  "Steelix": {
+    "dex": "208",
+    "type": "Steel,Ground",
+    "channel": "null"
+  },
+  "Snubbull": {
+    "dex": "209",
+    "type": "Fairy",
+    "channel": "null"
+  },
+  "Granbull": {
+    "dex": "210",
+    "type": "Fairy",
+    "channel": "null"
+  },
+  "Qwilfish": {
+    "dex": "211",
+    "type": "Water,Poison",
+    "channel": "null"
+  },
+  "Scizor": {
+    "dex": "212",
+    "type": "Bug,Steel",
+    "channel": "null"
+  },
+  "Shuckle": {
+    "dex": "213",
+    "type": "Bug,Rock",
+    "channel": "null"
+  },
+  "Heracross": {
+    "dex": "214",
+    "type": "Bug,Fighting",
+    "channel": "null"
+  },
+  "Sneasel": {
+    "dex": "215",
+    "type": "Dark,Ice",
+    "channel": "null"
+  },
+  "Teddiursa": {
+    "dex": "216",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Ursaring": {
+    "dex": "217",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Slugma": {
+    "dex": "218",
+    "type": "Fire",
+    "channel": "null"
+  },
+  "Magcargo": {
+    "dex": "219",
+    "type": "Fire,Rock",
+    "channel": "null"
+  },
+  "Swinub": {
+    "dex": "220",
+    "type": "Ice,Ground",
+    "channel": "null"
+  },
+  "Piloswine": {
+    "dex": "221",
+    "type": "Ice,Ground",
+    "channel": "null"
+  },
+  "Corsola": {
+    "dex": "222",
+    "type": "Water,Rock",
+    "channel": "null"
+  },
+  "Remoraid": {
+    "dex": "223",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Octillery": {
+    "dex": "224",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Delibird": {
+    "dex": "225",
+    "type": "Ice,Flying",
+    "channel": "null"
+  },
+  "Mantine": {
+    "dex": "226",
+    "type": "Water,Flying",
+    "channel": "null"
+  },
+  "Skarmory": {
+    "dex": "227",
+    "type": "Steel,Flying",
+    "channel": "null"
+  },
+  "Houndour": {
+    "dex": "228",
+    "type": "Dark,Fire",
+    "channel": "null"
+  },
+  "Houndoom": {
+    "dex": "229",
+    "type": "Dark,Fire",
+    "channel": "null"
+  },
+  "Kingdra": {
+    "dex": "230",
+    "type": "Water,Dragon",
+    "channel": "null"
+  },
+  "Phanpy": {
+    "dex": "231",
+    "type": "Ground",
+    "channel": "null"
+  },
+  "Donphan": {
+    "dex": "232",
+    "type": "Ground",
+    "channel": "null"
+  },
+  "Porygon2": {
+    "dex": "233",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Stantler": {
+    "dex": "234",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Smeargle": {
+    "dex": "235",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Tyrogue": {
+    "dex": "236",
+    "type": "Fighting",
+    "channel": "null"
+  },
+  "Hitmontop": {
+    "dex": "237",
+    "type": "Fighting",
+    "channel": "null"
+  },
+  "Smoochum": {
+    "dex": "238",
+    "type": "Ice,Psychic",
+    "channel": "null"
+  },
+  "Elekid": {
+    "dex": "239",
+    "type": "Electric",
+    "channel": "null"
+  },
+  "Magby": {
+    "dex": "240",
+    "type": "Fire",
+    "channel": "null"
+  },
+  "Miltank": {
+    "dex": "241",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Blissey": {
+    "dex": "242",
+    "type": "Normal",
+    "channel": "null"
+  },
+  "Raikou": {
+    "dex": "243",
+    "type": "Electric",
+    "channel": "null"
+  },
+  "Entei": {
+    "dex": "244",
+    "type": "Fire",
+    "channel": "null"
+  },
+  "Suicune": {
+    "dex": "245",
+    "type": "Water",
+    "channel": "null"
+  },
+  "Larvitar": {
+    "dex": "246",
+    "type": "Rock,Ground",
+    "channel": "null"
+  },
+  "Pupitar": {
+    "dex": "247",
+    "type": "Rock,Ground",
+    "channel": "null"
+  },
+  "Tyranitar": {
+    "dex": "248",
+    "type": "Rock,Dark",
+    "channel": "null"
+  },
+  "Lugia": {
+    "dex": "249",
+    "type": "Psychic,Flying",
+    "channel": "null"
+  },
+  "Ho-Oh": {
+    "dex": "250",
+    "type": "Fire,Flying",
+    "channel": "null"
+  },
+  "Celebi": {
+    "dex": "251",
+    "type": "Psychic,Grass",
+    "channel": "null"
+  },
+  "Sableye": {
+    "dex": "302",
+    "type": "Dark,Ghost",
+    "channel": "null"
+  },
+  "Shuppet": {
+    "dex": "353",
+    "type": "Ghost",
+    "channel": "null"
+  },
+  "Banette": {
+    "dex": "354",
+    "type": "Ghost",
+    "channel": "null"
+  },
+  "Duskull": {
+    "dex": "355",
+    "type": "Ghost",
+    "channel": "null"
+  },
+  "Dusclops": {
+    "dex": "356",
+    "type": "Ghost",
+    "channel": "null"
+  }
+}
