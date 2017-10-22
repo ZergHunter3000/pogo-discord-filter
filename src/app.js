@@ -33,7 +33,6 @@ discordBot.on('disconnect', (evt1, evt2) => {
 discordBot.on('message', message => {
     if (message.channel.id === channels.streamChannel) {
         let info = message.content.split('\n');
-
         if (info[0] in pokelist) {
             if (pokelist[info[0]].channel in channels) {
                 let remainingTime = info[1].split(':')[1];
@@ -68,12 +67,13 @@ discordBot.on('message', message => {
                     msg = info[0] + ' found and ' + info[1] + ' at\n' + info[3];
                 }
 
-                // if (pokelist[info[0].channel] !== 'null'){
-                    message.channel.id = channels[pokelist[info[0]].channel];
-                    message.channel.send(msg);
-                // } else {
-                //
-                // }
+                // For some reason setting a channel id is permanent, have to set back after
+                // This could be fixes if I could figure out how just sent a channel /with/ an id but I can't for some reason
+
+                let temp = message.channel.id;
+                message.channel.id = channels[pokelist[info[0]].channel];
+                message.channel.send(msg);
+                message.channel.id = temp;
 
                 console.log('\n');
                 logger.info(info[0] + ' Spawned\n      ' + info[1] + '\n      ' + info[2] + '\n      ' + info[3]);
