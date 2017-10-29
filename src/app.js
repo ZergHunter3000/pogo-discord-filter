@@ -38,13 +38,16 @@ discordBot.on('message', message => {
         let data = message.content.split('\n');
         let notification;
 
-        if (data[0] in pokelist && pokelist[data[0]].channel in channels) {
-            notification = _calculatePokemon(data);
+        if (data[0] in pokelist) {
+            console.log('test');
+            if (pokelist[data[0]].channel in channels) {
+                notification = _calculatePokemon(data);
+                console.log('test2');
+                sendNotification(notification, message.channel, channels[pokelist[data[0]].channel]);
 
-            sendNotification(notification, message.channel, channels[pokelist[data[0]].channel]);
-
-            console.log('\n');
-            logger.info(data[0] + ' Spawned\n      ' + data[1] + '\n      ' + data[2] + '\n      ' + data[3]);
+                console.log('\n');
+                logger.info(data[0] + ' Spawned\n      ' + data[1] + '\n      ' + data[2] + '\n      ' + data[3]);
+            }
         } else if (message.content.indexOf('test') === -1) {
             logger.error(data[0] + ' not found in pokelist.json!')
         }
