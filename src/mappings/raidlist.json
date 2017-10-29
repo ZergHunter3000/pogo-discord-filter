@@ -1,0 +1,172 @@
+{
+  "Magikarp": {
+    "tier": "1",
+    "dex": "129",
+    "channel": "null"
+  },
+  "Bayleef": {
+    "tier": "1",
+    "dex": "153",
+    "channel": "null"
+  },
+  "Quilava": {
+    "tier": "1",
+    "dex": "156",
+    "channel": "null"
+  },
+  "Croconaw": {
+    "tier": "1",
+    "dex": "158",
+    "channel": "null"
+},
+  "Muk": {
+    "tier": "2",
+    "dex": "089",
+    "channel": "null"
+  },
+  "Exeggutor": {
+    "tier": "2",
+    "dex": "103",
+    "channel": "null"
+  },
+  "Weezing": {
+    "tier": "2",
+    "dex": "110",
+    "channel": "null"
+  },
+  "Electabuzz": {
+    "tier": "2",
+    "dex": "125",
+    "channel": "null"
+},
+  "Magmar": {
+    "tier": "2",
+    "dex": "126",
+    "channel": "null"
+  },
+  "Arcanine": {
+    "tier": "3",
+    "dex": "059",
+    "channel": "null"
+  },
+  "Alakazam": {
+    "tier": "3",
+    "dex": "065",
+    "channel": "null"
+  },
+  "Machamp": {
+    "tier": "3",
+    "dex": "068",
+    "channel": "null"
+  },
+  "Gengar": {
+    "tier": "3",
+    "dex": "094",
+    "channel": "null"
+  },
+  "Vaporeon": {
+    "tier": "3",
+    "dex": "134",
+    "channel": "null"
+  },
+  "Jolteon": {
+    "tier": "3",
+    "dex": "135",
+    "channel": "null"
+  },
+  "Flareon": {
+    "tier": "3",
+    "dex": "136",
+    "channel": "null"
+  },
+  "Venusaur": {
+    "tier": "4",
+    "dex": "003",
+    "channel": "null"
+  },
+  "Charizard": {
+    "tier": "4",
+    "dex": "006",
+    "channel": "null"
+  },
+  "Blastoise": {
+    "tier": "4",
+    "dex": "009",
+    "channel": "null"
+  },
+  "Rhydon": {
+    "tier": "4",
+    "dex": "112",
+    "channel": "null"
+  },
+  "Lapras": {
+    "tier": "4",
+    "dex": "131",
+    "channel": "null"
+  },
+  "Snorlax": {
+    "tier": "4",
+    "dex": "143",
+    "channel": "null"
+  },
+  "Tyranitar": {
+    "tier": "4",
+    "dex": "248",
+    "channel": "null"
+  },
+  "Articuno": {
+    "tier": "5",
+    "dex": "144",
+    "channel": "null"
+  },
+  "Zapdos": {
+    "tier": "5",
+    "dex": "145",
+    "channel": "null"
+  },
+  "Moltres": {
+    "tier": "5",
+    "dex": "146",
+    "channel": "null"
+  },
+  "Mewtwo": {
+    "tier": "5",
+    "dex": "150",
+    "channel": "null"
+  },
+  "Mew": {
+    "tier": "5",
+    "dex": "151",
+    "channel": "null"
+  },
+  "Raikou": {
+    "tier": "5",
+    "dex": "243",
+    "channel": "null"
+  },
+  "Entei": {
+    "tier": "5",
+    "dex": "244",
+    "channel": "null"
+  },
+  "Suicune": {
+    "tier": "5",
+    "dex": "245",
+    "channel": "null"
+  },
+  "Lugia": {
+    "tier": "5",
+    "dex": "249",
+    "channel": "null"
+  },
+  "Ho-Oh": {
+    "tier": "5",
+    "dex": "250",
+    "channel": "null"
+  },
+  "Celebi": {
+    "tier": "5",
+    "dex": "251",
+    "channel": "null"
+  }
+}

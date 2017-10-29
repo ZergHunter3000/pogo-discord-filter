@@ -1,13 +1,12 @@
 {
   "name": "pogo-discord-filter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "author": "Connor Miller",
   "scripts": {
     "start": "node ./src/app.js"
   },
   "dependencies": {
-    "discord.io": "^2.5.3",
     "discord.js": "^11.2.1",
     "winston": "^2.4.0"
   }
