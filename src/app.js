@@ -3,6 +3,8 @@ const logger     = require('winston');
 
 const auth     = require('./auth.json');
 const pokelist = require('./mappings/pokelist.json');
+const raidlist = require('./mappings/raidlist.json');
+const raidegglist = require('./mappings/raidegglist.json');
 const channels = require('./mappings/channels.json');
 
 
@@ -12,6 +14,7 @@ const channels = require('./mappings/channels.json');
 logger.remove(logger.transports.Console);
 logger.add(logger.transports.Console, {colorize: true});
 logger.level = 'debug';
+
 
 
 /**
@@ -31,55 +34,40 @@ discordBot.on('disconnect', (evt1, evt2) => {
 });
 
 discordBot.on('message', message => {
-    if (message.channel.id === channels.streamChannel) {
-        let info = message.content.split('\n');
-        if (info[0] in pokelist) {
-            if (pokelist[info[0]].channel in channels) {
-                let remainingTime = info[1].split(':')[1];
-                let despawnTime = null;
-                let msg;
+    if (message.channel.id === channels.pokemonStream) {
+        let data = message.content.split('\n');
+        let notification;
 
-                // Convert remaining time to actual hour:minute value
-                if (remainingTime) {
-                    if (remainingTime.indexOf('h') === -1) {
-                        if (remainingTime.indexOf('m') !== -1 && remainingTime.indexOf('s') !== -1) {
-                            despawnTime = _getDespawnTime(parseInt(remainingTime.split('m')[0].trim(), 10), parseInt(remainingTime.split('m')[1].split('s')[0].trim(), 10));
-                        } else if (remainingTime.indexOf('m') !== -1) {
-                            despawnTime = _getDespawnTime(parseInt(remainingTime.split('m')[0].trim(), 10), 0);
-                        } else if (remainingTime.indexOf('s') !== -1) {
-                            despawnTime = _getDespawnTime(0, parseInt(remainingTime.split('s')[0].trim(), 10));
-                        }
-                    } else {
-                        // Have yet to see it be over 59 minutes, if this does occur, the script will have to be adjusted accordingly
-                        logger.error('There was an h!  Please contact support and provide this log [ ' + remainingTime + ' ]');
-                    }
-                } else if (info[1].indexOf('More than 1 min left') !== -1) {
-                    despawnTime = 'unknown';
-                } else {
-                    logger.error(remainingTime, info[1]);
-                }
+        if (data[0] in pokelist && pokelist[data[0]].channel in channels) {
+            notification = _calculatePokemon(data);
 
-                if (despawnTime === 'unknown') {
-                    msg = info[0] + ' Spawned\n' + 'Unknown Expiration\n' + info[3];
-                } else if (despawnTime !== null) {
-                    msg = info[0] + ' Spawned\n' + 'Expires at ' + despawnTime + ' (' + remainingTime + ')\n' + info[3];
-                } else {
-                    msg = info[0] + ' found and ' + info[1] + ' at\n' + info[3];
-                }
+            sendNotification(notification, message.channel, channels[pokelist[data[0]].channel]);
 
-                // For some reason setting a channel id is permanent, have to set back after
-                // This could be fixes if I could figure out how just sent a channel /with/ an id but I can't for some reason
+            console.log('\n');
+            logger.info(data[0] + ' Spawned\n      ' + data[1] + '\n      ' + data[2] + '\n      ' + data[3]);
+        } else if (message.content.indexOf('test') === -1) {
+            logger.error(data[0] + ' not found in pokelist.json!')
+        }
+    } else if (message.channel.id === channels.raidStream) {
+        let data = message.content.split('\n');
+        let notification;
 
-                let temp = message.channel.id;
-                message.channel.id = channels[pokelist[info[0]].channel];
-                message.channel.send(msg);
-                message.channel.id = temp;
+        // if ((data[0].indexOf('boss') !== -1 && data[0].split(' ')[2] in raidlist)
+        //     || (data[0].indexOf('Level') !== -1 && raidegglist[data[0].split(' ')[2]].channel in channels)) {
+        //     console.log('yes')
+        // }
 
-                console.log('\n');
-                logger.info(info[0] + ' Spawned\n      ' + info[1] + '\n      ' + info[2] + '\n      ' + info[3]);
+        if ((data[0].indexOf('boss') !== -1 && data[0].split(' ')[2] in raidlist)
+            || (data[0].indexOf('Level') !== -1 && raidegglist[data[0].split(' ')[2]].channel in channels)) {
+            notification = _calculateRaid(data);
+
+            if (data[0].indexOf('boss') !== -1) {
+                sendNotification(notification, message.channel, channels[raidlist[data[0].split(' ')[2]].channel]);
+            } else if (data[0].indexOf('Level') !== -1) {
+                sendNotification(notification, message.channel, channels[raidegglist[data[0].split(' ')[2]].channel]);
             }
         } else if (message.content.indexOf('test') === -1) {
-            logger.error(info[0] + ' not found in pokelist.json!')
+            logger.error('Unknown raid boss notification:\n', message.content);
         }
     }
 });
@@ -91,7 +79,7 @@ discordBot.login(auth.token);
 /**
  * Functions
  **/
-function _getDespawnTime(minutes = 0, seconds = 0) {
+function getDespawnTime(minutes = 0, seconds = 0) {
     let cur = new Date();
     let newHour, newMin, ampm;
 
@@ -116,6 +104,81 @@ function _getDespawnTime(minutes = 0, seconds = 0) {
     }
 
     return newHour + ':' + newMin + ampm;
+}
+
+function _calculatePokemon(data) {
+    /*
+     * data[0] = pokemon name
+     * data[1] = remaining time (unformatted)
+     * data[2] = clock time found by scanner
+     * data[3] = google maps link
+     */
+    let remainingTime = data[1].split(':')[1];
+    let despawnTime = null;
+
+    // Convert remaining time to actual hour:minute value
+    if (remainingTime) {
+        if (remainingTime.indexOf('h') === -1) {
+            if (remainingTime.indexOf('m') !== -1 && remainingTime.indexOf('s') !== -1) {
+                despawnTime = getDespawnTime(parseInt(remainingTime.split('m')[0].trim(), 10), parseInt(remainingTime.split('m')[1].split('s')[0].trim(), 10));
+            } else if (remainingTime.indexOf('m') !== -1) {
+                despawnTime = getDespawnTime(parseInt(remainingTime.split('m')[0].trim(), 10), 0);
+            } else if (remainingTime.indexOf('s') !== -1) {
+                despawnTime = getDespawnTime(0, parseInt(remainingTime.split('s')[0].trim(), 10));
+            }
+        } else {
+            // Have yet to see it be over 59 minutes, if this does occur, the script will have to be adjusted accordingly
+            logger.error('There was an h!  Please contact support and provide this log [ ' + remainingTime + ' ]');
+        }
+    } else if (data[1].indexOf('More than 1 min left') !== -1) {
+        despawnTime = 'unknown';
+    } else {
+        logger.error(remainingTime, data[1]);
+    }
+
+    return new Discord.RichEmbed()
+        .setTitle(data[0] + ' Spawned')
+        .setColor(0x00AE86)
+        .setDescription('Expires at ' + despawnTime + ' (' + remainingTime + ')')
+        //.setImage()
+        .setThumbnail('https://raw.githubusercontent.com/ZergHunter3000/pogo-discord-filter/master/src/resources/pokemon/' + pokelist[data[0]].dex + '.png')
+        .setURL(data[3]);
+}
+
+function _calculateRaid(data) {
+    /*
+     * data[0] = 'Raid boss: name'
+     * data[1] = 'Moes
+     * data[2] = clock time found by scanner
+     * data[3] = google maps link
+     */
+    if (data[0].indexOf('boss') !== -1) {
+        return new Discord.RichEmbed()
+            .setTitle(data[0].split(' ')[2] + ' Raid Started')
+            .setColor(0x00AE86)
+            .setDescription('Ends at ' + data[3].split(' ')[3]) // + ' (' + remainingTime + ')')
+            //.setImage()
+            .setThumbnail('https://raw.githubusercontent.com/ZergHunter3000/pogo-discord-filter/master/src/resources/pokemon/' + raidlist[data[0].split(' ')[2]].dex + '.png')
+            .setURL(data[4]);
+    } else if (data[0].indexOf('Level') !== -1) {
+        return new Discord.RichEmbed()
+            .setTitle('Level ' + data[0].split(' ')[2] + ' Raid Discovered')
+            .setColor(0x00AE86)
+            .setDescription(data[1].split('Raid ')[1])
+            //.setImage()
+            .setThumbnail('https://raw.githubusercontent.com/ZergHunter3000/pogo-discord-filter/master/src/resources/eggs/' + raidegglist[data[0].split(' ')[2]].rarity + '.png')
+            .setURL(data[2]);
+    }
+    return null;
+}
+
+function sendNotification(notification, channel, channelId) {
+    // For some reason setting a channel id is permanent, have to set back after
+    // This could be fixed if I could figure out how just sent a channel /with/ an id but I can't for some reason
+    let temp = channel.id;
+    channel.id = channelId;
+    channel.send(notification);
+    channel.id = temp;
 }
 
 

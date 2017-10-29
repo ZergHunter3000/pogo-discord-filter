@@ -1,7 +1,12 @@
 {
-  "streamChannel": "",
+  "pokemonStream": "",
+  "raidStream": "",
 
-  "outputChannel1": "",
-  "outputChannel2": "",
-  "outputChannel3": ""
+  "pokeOutput1": "",
+  "pokeOutput2": "",
+  "pokeOutput3": "",
+
+  "raidOutput1": "",
+  "raidOutput2": "",
+  "raidOutput3": ""
 }
