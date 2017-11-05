@@ -1,172 +1,267 @@
 {
+  "Ivysaur": {
+    "tier": "1",
+    "dex": "002",
+    "channel": "raidOutput1"
+  },
+  "Charmeleon": {
+    "tier": "1",
+    "dex": "005",
+    "channel": "raidOutput1"
+  },
+  "Wartortle": {
+    "tier": "1",
+    "dex": "008",
+    "channel": "raidOutput1"
+  },
+  "Metapod": {
+    "tier": "1",
+    "dex": "011",
+    "channel": "raidOutput1"
+  },
   "Magikarp": {
     "tier": "1",
     "dex": "129",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Bayleef": {
     "tier": "1",
     "dex": "153",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Quilava": {
     "tier": "1",
     "dex": "156",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Croconaw": {
     "tier": "1",
     "dex": "158",
-    "channel": "null"
+    "channel": "raidOutput1"
 },
+  "Magneton": {
+    "tier": "2",
+    "dex": "082",
+    "channel": "raidOutput1"
+  },
+  "Sableye": {
+    "tier": "2",
+    "dex": "302",
+    "channel": "raidOutput1"
+  },
+  "Sandslash": {
+    "tier": "2",
+    "dex": "028",
+    "channel": "raidOutput1"
+  },
+  "Tentacruel": {
+    "tier": "2",
+    "dex": "073",
+    "channel": "raidOutput1"
+  },
+  "Marowak": {
+    "tier": "2",
+    "dex": "105",
+    "channel": "raidOutput1"
+  },
+  "Cloyster": {
+    "tier": "2",
+    "dex": "091",
+    "channel": "raidOutput1"
+  },
   "Muk": {
     "tier": "2",
     "dex": "089",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Exeggutor": {
     "tier": "2",
     "dex": "103",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Weezing": {
     "tier": "2",
     "dex": "110",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Electabuzz": {
     "tier": "2",
     "dex": "125",
-    "channel": "null"
+    "channel": "raidOutput1"
 },
   "Magmar": {
     "tier": "2",
     "dex": "126",
-    "channel": "null"
+    "channel": "raidOutput1"
+  },
+  "Ninetales": {
+    "tier": "3",
+    "dex": "038",
+    "channel": "raidOutput1"
+  },
+  "Scyther": {
+    "tier": "3",
+    "dex": "123",
+    "channel": "raidOutput1"
+  },
+  "Omastar": {
+    "tier": "3",
+    "dex": "139",
+    "channel": "raidOutput1"
+  },
+  "Porygon": {
+    "tier": "3",
+    "dex": "137",
+    "channel": "raidOutput1"
   },
   "Arcanine": {
     "tier": "3",
     "dex": "059",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Alakazam": {
     "tier": "3",
     "dex": "065",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Machamp": {
     "tier": "3",
     "dex": "068",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Gengar": {
     "tier": "3",
     "dex": "094",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Vaporeon": {
     "tier": "3",
     "dex": "134",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Jolteon": {
     "tier": "3",
     "dex": "135",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Flareon": {
     "tier": "3",
     "dex": "136",
-    "channel": "null"
+    "channel": "raidOutput1"
+  },
+  "Poliwrath": {
+    "tier": "4",
+    "dex": "062",
+    "channel": "raidOutput1"
+  },
+  "Victreebel": {
+    "tier": "4",
+    "dex": "071",
+    "channel": "raidOutput1"
+  },
+  "Golem": {
+    "tier": "4",
+    "dex": "076",
+    "channel": "raidOutput1"
+  },
+  "Nidoking": {
+    "tier": "4",
+    "dex": "034",
+    "channel": "raidOutput1"
+  },
+  "Nidoqueen": {
+    "tier": "4",
+    "dex": "031",
+    "channel": "raidOutput1"
   },
   "Venusaur": {
     "tier": "4",
     "dex": "003",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Charizard": {
     "tier": "4",
     "dex": "006",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Blastoise": {
     "tier": "4",
     "dex": "009",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Rhydon": {
     "tier": "4",
     "dex": "112",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Lapras": {
     "tier": "4",
     "dex": "131",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Snorlax": {
     "tier": "4",
     "dex": "143",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Tyranitar": {
     "tier": "4",
     "dex": "248",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Articuno": {
     "tier": "5",
     "dex": "144",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Zapdos": {
     "tier": "5",
     "dex": "145",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Moltres": {
     "tier": "5",
     "dex": "146",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Mewtwo": {
     "tier": "5",
     "dex": "150",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Mew": {
     "tier": "5",
     "dex": "151",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Raikou": {
     "tier": "5",
     "dex": "243",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Entei": {
     "tier": "5",
     "dex": "244",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Suicune": {
     "tier": "5",
     "dex": "245",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Lugia": {
     "tier": "5",
     "dex": "249",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Ho-Oh": {
     "tier": "5",
     "dex": "250",
-    "channel": "null"
+    "channel": "raidOutput1"
   },
   "Celebi": {
     "tier": "5",
     "dex": "251",
-    "channel": "null"
+    "channel": "raidOutput1"
   }
 }
