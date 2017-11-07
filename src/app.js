@@ -34,15 +34,13 @@ discordBot.on('disconnect', (evt1, evt2) => {
 });
 
 discordBot.on('message', message => {
-    if (message.channel.id === channels.pokemonStream) {
+    if (message.channel.id === channels.pokemonStream && message.content.indexOf('Raid') === -1) {
         let data = message.content.split('\n');
         let notification;
 
         if (data[0] in pokelist) {
-            console.log('test');
             if (pokelist[data[0]].channel in channels) {
                 notification = _calculatePokemon(data);
-                console.log('test2');
                 sendNotification(notification, message.channel, channels[pokelist[data[0]].channel]);
 
                 console.log('\n');
@@ -54,11 +52,6 @@ discordBot.on('message', message => {
     } else if (message.channel.id === channels.raidStream) {
         let data = message.content.split('\n');
         let notification;
-
-        // if ((data[0].indexOf('boss') !== -1 && data[0].split(' ')[2] in raidlist)
-        //     || (data[0].indexOf('Level') !== -1 && raidegglist[data[0].split(' ')[2]].channel in channels)) {
-        //     console.log('yes')
-        // }
 
         if ((data[0].indexOf('boss') !== -1 && data[0].split(' ')[2] in raidlist)
             || (data[0].indexOf('Level') !== -1 && raidegglist[data[0].split(' ')[2]].channel in channels)) {
@@ -118,6 +111,7 @@ function _calculatePokemon(data) {
      */
     let remainingTime = data[1].split(':')[1];
     let despawnTime = null;
+    let coordinates = data[3].split('?q=')[1];
 
     // Convert remaining time to actual hour:minute value
     if (remainingTime) {
@@ -143,7 +137,7 @@ function _calculatePokemon(data) {
         .setTitle(data[0] + ' Spawned')
         .setColor(0x00AE86)
         .setDescription('Expires at ' + despawnTime + ' (' + remainingTime + ')')
-        //.setImage()
+        .setImage('https://maps.googleapis.com/maps/api/staticmap?center=' + coordinates + '&zoom=15&size=250x200&markers=color:red%7Clabel:A%7C' + coordinates)
         .setThumbnail('https://raw.githubusercontent.com/ZergHunter3000/pogo-discord-filter/master/src/resources/pokemon/' + pokelist[data[0]].dex + '.png')
         .setURL(data[3]);
 }
@@ -156,19 +150,21 @@ function _calculateRaid(data) {
      * data[3] = google maps link
      */
     if (data[0].indexOf('boss') !== -1) {
+        let coordinates = data[4].split('?q=')[1];
         return new Discord.RichEmbed()
             .setTitle(data[0].split(' ')[2] + ' Raid Started')
             .setColor(0x00AE86)
             .setDescription('Ends at ' + data[3].split(' ')[3]) // + ' (' + remainingTime + ')')
-            //.setImage()
+            .setImage('https://maps.googleapis.com/maps/api/staticmap?center=' + coordinates + '&zoom=15&size=250x200&markers=color:red%7Clabel:A%7C' + coordinates)
             .setThumbnail('https://raw.githubusercontent.com/ZergHunter3000/pogo-discord-filter/master/src/resources/pokemon/' + raidlist[data[0].split(' ')[2]].dex + '.png')
             .setURL(data[4]);
     } else if (data[0].indexOf('Level') !== -1) {
+        let coordinates = data[2].split('?q=')[1];
         return new Discord.RichEmbed()
             .setTitle('Level ' + data[0].split(' ')[2] + ' Raid Discovered')
             .setColor(0x00AE86)
             .setDescription(data[1].split('Raid ')[1])
-            //.setImage()
+            .setImage('https://maps.googleapis.com/maps/api/staticmap?center=' + coordinates + '&zoom=15&size=250x200&markers=color:red%7Clabel:A%7C' + coordinates)
             .setThumbnail('https://raw.githubusercontent.com/ZergHunter3000/pogo-discord-filter/master/src/resources/eggs/' + raidegglist[data[0].split(' ')[2]].rarity + '.png')
             .setURL(data[2]);
     }
@@ -183,21 +179,3 @@ function sendNotification(notification, channel, channelId) {
     channel.send(notification);
     channel.id = temp;
 }
-
-
-/*Ignore for testing*/
-// const embed = new Discord.RichEmbed()
-//     .setTitle(info[0] + ' Spawned')
-//     .setColor(0x00AE86)
-//     .setDescription('Expires at ' + despawnTime + ' (' + remainingTime + ')')
-//     //.setImage()
-//     //.setThumbnail('https://cdn.bulbagarden.net/upload/thumb/c/cc/147Dratini.png/250px-147Dratini.png')
-//     .setThumbnail('http://test.png')
-//     .setURL(info[3]);
-// message.channel.send({
-//     embed: {
-//         color: 3447003,
-//         title: info[0] + " Spawned",
-//         url: info[3]
-//     }
-// });
