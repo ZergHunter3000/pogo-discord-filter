@@ -21,7 +21,6 @@ logger.level = 'debug';
  * Initialize Discord Bot
  **/
 let discordBot = new Discord.Client();
-
 // Define socket events (ready, disconnect, message)
 discordBot.on('ready', () => {
     logger.info('Discord Connected');
@@ -176,6 +175,10 @@ function sendNotification(notification, channel, channelId) {
     // This could be fixed if I could figure out how just sent a channel /with/ an id but I can't for some reason
     let temp = channel.id;
     channel.id = channelId;
-    channel.send(notification);
+    try {
+        channel.send(notification);
+    } catch (error) {
+        logger.error('Send notification failed with return: \n' + error + '\n The notification had the following details: ', '\n NOTIFICATION:\n', notification, '\nCHANNEL:\n', channel, '\nCHANNEL ID:\n', channelId)
+    }
     channel.id = temp;
 }
