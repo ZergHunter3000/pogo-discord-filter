@@ -153,7 +153,7 @@ function _calculateRaid(data) {
         return new Discord.RichEmbed()
             .setTitle(data[0].split(' ')[2] + ' Raid Started')
             .setColor(0x00AE86)
-            .setDescription('Ends at ' + data[3].split(' ')[3]) // + ' (' + remainingTime + ')')
+            .setDescription('Ends at ' + data[3].split(' ')[3] + '\n' + data[1]) // + ' (' + remainingTime + ')')
             .setImage('https://maps.googleapis.com/maps/api/staticmap?center=' + coordinates + '&zoom=15&size=250x200&markers=color:red%7Clabel:A%7C' + coordinates)
             .setThumbnail('https://raw.githubusercontent.com/ZergHunter3000/pogo-discord-filter/master/src/resources/pokemon/' + raidlist[data[0].split(' ')[2]].dex + '.png')
             .setURL(data[4]);
